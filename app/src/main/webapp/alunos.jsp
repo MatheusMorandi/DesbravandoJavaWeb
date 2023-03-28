@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="iniciando.Aluno" %>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,13 +15,20 @@
         iniciando.Aluno a1 = new iniciando.Aluno();
         a1.id = 10;
         a1.nome = "Paudilha";
+
+        Aluno[] alunos = new Aluno [10];
+        alunos[0] = new Aluno();
+        alunos[0].id = 20;
+        alunos[0].nome = "Galvas";
     
     %>
 
     <ul>
 
-        <li>ID: <%= a1.id %></li:>
-        <li>NOME: <%= a1.nome %></li:>
+        <li>ID: <%= a1.id %></li>
+        <li>NOME: <%= a1.nome %></li>
+        <li>ID: <%= alunos[0].id %></li>
+        <li>NOME: <%= alunos[0].nome %></li>
 
     </ul>
 
